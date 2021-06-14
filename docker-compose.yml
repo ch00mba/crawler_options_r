@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  rstudio-server:
+    container_name: rstudio-server
+    image: rocker/rstudio:4.1.0
+    privileged: true
+    environment:
+      - ROOT=TRUE
+      - PASSWORD=qwe123
+    ports:
+      - 8787:8787
